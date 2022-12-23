@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Git e Github Cheat Sheet - My Docs</title>
+        <link href="../../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/github.min.css">
+
+        <script src="../../js/jquery-1.10.2.min.js" defer></script>
+        <script src="../../js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="../..">My Docs</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href="../.." class="nav-link">CKAN-MG--2023 - TDCO Agência ARMBH</a>
+                            </li>
+                            <li class="dropdown active">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Modelos <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../ata_de_reuniao/" class="dropdown-item">Modelo Ata Reunião</a>
+</li>
+                                    
+<li>
+    <a href="../caso_de_teste/" class="dropdown-item">Modelo Casos de Teste</a>
+</li>
+                                    
+<li>
+    <a href="../estoria_de_usuario/" class="dropdown-item">Modelo Estória de Usuário</a>
+</li>
+                                    
+<li>
+    <a href="./" class="dropdown-item active">Git e Github Cheat Sheet</a>
+</li>
+                                    
+<li>
+    <a href="../tipos_dado_formulario_html/" class="dropdown-item">Tipos de Dados</a>
+</li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Roadmap <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    
+<li>
+    <a href="../../roadmap/go_live/" class="dropdown-item">Articulação e harmonização</a>
+</li>
+                                    
+<li>
+    <a href="../../roadmap/pagina_dataset/" class="dropdown-item">Customização da Página do dataset</a>
+</li>
+                                    
+<li>
+    <a href="../../roadmap/pagina_nova_etiqueta/" class="dropdown-item">Criação de páginas secundárias para cada etiqueta com agrupamento de dados em formato visual e base de dados</a>
+</li>
+                                    
+<li>
+    <a href="../../roadmap/pagina_organizacao/" class="dropdown-item">Customização da página de cada organização</a>
+</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../estoria_de_usuario/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../tipos_dado_formulario_html/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#git-e-github-cheat-sheet" class="nav-link">Git e Github Cheat Sheet</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="git-e-github-cheat-sheet">Git e Github Cheat Sheet</h1>
+<p>Materiais de referência:</p>
+<ul>
+<li><a href="https://medium.com/@annamedyukh/the-only-git-cheat-sheet-you-need-9dce3ccc4036">The only git cheat sheet you need</a></li>
+<li><a href="https://res.cloudinary.com/practicaldev/image/fetch/s--Zib71Fgv--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/n082uxea33j6zq3mca7u.png">Git Infográfico</a></li>
+</ul>
+<p>Fluxo sugerido</p>
+<pre><code class="language-mermaid">graph TD;
+    1((Início))--&gt;2;
+    2{git iniciado no projeto?}
+    2 --&gt; |não| 3[git init]
+    3 --&gt; 11[Cria repositório Github]
+    11 --&gt; 12[git remote add &lt;nome_remote&gt; &lt;endereço_remote&gt;]
+    12 --&gt; 4
+    2 --&gt; |sim| 4[git status]
+    4 --&gt; 5{Commitar na branch main?}
+    5 --&gt; |sim| 6[git add &lt;file_name&gt;]
+    6 --&gt; 7[git commit -m &lt;commit_message_entre_aspas&gt;]
+    7 --&gt; 5
+    5 --&gt; |não| 8{Criar nova branch?}
+    8 --&gt; |sim| 9[git pull origin main]
+    8 --&gt; |não| 16((Fim))
+    9 --&gt; 10[git checkout -b &lt;nova_branch_nome&gt;]
+    10 --&gt; 13{Commitar?}
+    13 --&gt; |sim| 14[git add &lt;file_name&gt;]
+    14 --&gt; 15[git commit -m &lt;commit_message_entre_aspas&gt;]
+    13 --&gt; |não| 17{Abrir PR Github?}
+    15 --&gt; 13
+    17 --&gt; |sim| 18[git push &lt;nome_remote&gt; &lt;nova_branch_nome&gt;]
+    17 --&gt; |não| 16
+    18 --&gt; 20[Abrir/aprovar PR Github]
+    20 --&gt; 21[git checkout main]
+    21 --&gt; 22[git pull origin main]
+    22 --&gt; 23{Deletar &lt;nova_branch_nome&gt; já mergiada?}
+    23 --&gt; |sim| 24[git branch -d &lt;nova_branch_nome&gt;]
+    23 --&gt; |não| 5
+    24 --&gt; 5
+</code></pre></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = "../..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../../js/base.js" defer></script>
+        <script src="../../search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
