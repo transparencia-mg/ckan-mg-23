@@ -8,8 +8,6 @@ Na página do dataset, prever possibilidade de manter identidade visual da organ
 
 - [ ] mecanismo de busca (CKAN nativo exige palavra inteira, como github)
 
-- [ ] menu lateral com acesso rápido a outras páginas
-
 - [ ] link direto para fale conosco da organização (órgão/entidade estadual responsável pelo dataset) - exemplo: - exemplo: [Sweden Infraestructure - botão 'contact the contributor'](https://data.humdata.org/dataset/world-bank-infrastructure-indicators-for-sweden)
 
 - [ ] amostra de dados similares (possível filtro interno por tag) - exemplo: [Portal CHISPA de Santiago de Cali, 'Datos Similares' abaixo de Huerto de Motocicletas](https://cali.chis.pa/dataset/hurto-de-motocicletas)

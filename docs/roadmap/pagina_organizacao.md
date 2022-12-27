@@ -21,3 +21,5 @@ Deverá, ainda, proporcionar acesso à funcionalidades como mecanismo de busca, 
 - [ ] link para redes sociais (CKAN nativo permite compartilhar o conteúdo existente da página do dataset e recurso)
 
 - [ ] link direto para fale conosco da organização (órgão/entidade estadual responsável pelo dataset) - exemplo: - exemplo: [Sweden Infraestructure - botão 'contact the contributor'](https://data.humdata.org/dataset/world-bank-infrastructure-indicators-for-sweden)
+
+- [ ] menu lateral com acesso rápido a outras páginas - exemplo: [Singapore menu lateral 'Topics' com ícones das páginas temáticas](https://data.gov.sg/search)
