@@ -41,46 +41,11 @@ format: ## Run blue and isor python libraries to better format the code
 	@blue .
 	@isort .
 
-lint-blue: ## Use blue python library to check code formats
-	@echo "Using blue python library to check code formats..."
-	@$(ACTIVATE_LINUX)
-	@blue --check .
-
-lint-isort: ## Use isort python library to check import orders
-	@echo "Using isort python library to check import orders..."
-	@$(ACTIVATE_LINUX)
-	@isort --check .
-
-link-prospect: ## Use prospector python library to check docstrings formats
-	@echo "Using prospector python library to check docstrings formats..."
-	@$(ACTIVATE_LINUX)
-	@prospector --with-tool pydocstyle --doc-warning
-
-lint: lint-blue lint-isort link-prospect
-
-security: ## Check python libraries installed with pip-audit
-	@echo "Checking python libraries installed with pip-audit..."
-	@$(ACTIVATE_LINUX)
-	@$(UNINSTALL_PACKAGES)
-	@pip-audit --desc
-	@$(INSTALL_PACKAGES)
-
-tests: ## Run python tests
-	@echo "Running python tests..."
-	@$(ACTIVATE_LINUX)
-	@pytest -v
-
-security-pull: lint security tests
-
 gh-deploy-mkdocs: ## Deploy docs
 	@echo "Running mkdocs gh-deploy..."
 	@$(ACTIVATE_LINUX)
 	@mkdocs gh-deploy
 
-gh-deploy-mike: ## Deploy docs
-	@echo "Running mike deploy..."
-	@$(ACTIVATE_LINUX)
-	@mike deploy --push --update-aliases 0.1 latest
 
 convert-pdf: $(IMAGES)
 
