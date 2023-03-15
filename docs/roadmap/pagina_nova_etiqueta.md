@@ -4,7 +4,7 @@ Deverão ser criadas páginas específicas para cada tag previamente selecionada
 
 - [ ] página nova temática de cada tag/etiqueta/keyword (áreas de políticas temáticas, compatíveis com [lista de vocabulário controlado de governo eletrônico do governo federal](https://www.gov.br/governodigital/pt-br/governanca-de-dados/VCGE_2_1_0.pdf)) - [exemplo do Portal de Dados de Singapura](https://data.gov.sg/)
 
-- [ ] dados 'at a glance' via gráficos, mapas, dashboards. Exemplos: [Portal CHISPA, Santiago de Cali - vide 'Destacado'](https://cali.chis.pa/), [Sweden Infraestructure - quick charts](https://data.humdata.org/dataset/world-bank-infrastructure-indicators-for-sweden), [Singapore at a glance](https://data.gov.sg/)
+- [ ] dados 'at a glance' via gráficos, mapas, dashboards. Exemplos: [Portal CHISPA, Santiago de Cali - vide 'Destacado'](https://cali.chis.pa/), [Sweden Infraestructure - quick charts](https://data.humdata.org/dataset/world-bank-infrastructure-indicators-for-sweden), [Singapore at a glance](https://data.gov.sg/); [extensão](https://github.com/ckan/ckanext-dashboard)
 
 - [ ] preservação da identidade visual própria de cada página temática da organização e harmonização com identidade visual do CKAN, exemplo: [Sinagpore transport](https://data.gov.sg/group/transport) e [Singapore Health](https://data.gov.sg/group/health)
 
